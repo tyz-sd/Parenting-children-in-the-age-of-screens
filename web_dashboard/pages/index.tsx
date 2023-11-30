@@ -61,14 +61,15 @@ export default function Home() {
     console.log("Submitting:", answerList);
 
     // Send the data to your API endpoint
-    const response = await fetch("/api/submitAnswers", {
+    const response = await fetch("http://127.0.0.1:5000/analyze", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({ answers: answerList }),
+      body: JSON.stringify(answerList),
     });
-
+    
+    console.log(response);
     const result = await response.json();
-    console.log(result);
+    alert(JSON.stringify(result));
     // Handle the result here (e.g., show it in the UI)
   };
 
