@@ -7,7 +7,7 @@ from sklearn.utils import resample
 from joblib import load
 
 
-def prediction1(ans_list):
+def prediction_How_is_curret_days_parenting(ans_list):
     model_for_how_is_curret_days_parenting = load('./model/random_forest_model_15.joblib')
     categorical_columns1 = ['Time_spent_together' , 'ACCEPT_own_smartphone', 'ML_learn_social_skills', 
                             'ML_do_well_in_school', 'Feel_pressurised_to_share', 'ADV_socialmedia',
@@ -30,7 +30,7 @@ def prediction1(ans_list):
     return data_encoded['How_is_curret_days_parenting'][len(data_encoded) - 1]
 
 
-def prediction2(ans_list):
+def prediction_Harm_vs_benifits(ans_list):
     model_for_how_is_curret_days_parenting = load('./model/random_forest_model2_15.joblib')
     categorical_columns1 = ['Time_spent_together' , 'ACCEPT_own_smartphone', 'ML_learn_social_skills', 
                             'ML_do_well_in_school', 'Feel_pressurised_to_share', 'ADV_socialmedia',
@@ -48,7 +48,7 @@ def prediction2(ans_list):
     X = data_encoded
     y_pred_rf1 = model_for_how_is_curret_days_parenting.predict(X)
     data_encoded['Harm_vs_benifits'] = y_pred_rf1
-    data_encoded.to_csv("result.csv")
     
     return data_encoded['Harm_vs_benifits'][len(data_encoded) - 1]
-# print(prediction1([1,1,1,1,0,1,1,0,0,0,1,1,1,0,0,0]))
+
+
