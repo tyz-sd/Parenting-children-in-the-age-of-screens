@@ -1,6 +1,6 @@
 # Summarize
 
-##### 1. Suburban parents are more worried about their kids playing with cell phones (since they work full-time and their kids are at home)
+### 1. Suburban parents are more worried about their kids playing with cell phones (since they work full-time and their kids are at home)
 
 ```python
 '''
@@ -25,38 +25,8 @@ plt.ylabel('Frequency')
 plt.legend(loc='center left', bbox_to_anchor=(1, 0.5))
 plt.show()
 ```
-![images](/spend-time%20calculate.png)
+![images](spend-time%20calculate.png)
 
-#### How old are the children in the family
-
-```python
-'''
-How old is the average child?
-'''
-import pandas as pd
-import matplotlib.pyplot as plt
-
-data = pd.read_csv('pre_processed_data.csv')
-
-# Group children by neighborhood and calculate the total number of children in each age group
-grouped_data = data.groupby('P_neighborhood')[['No_of_kids_0_4', 'No_of_kids_5_11', 'No_of_kids_12_17', 'No_of_kids_above_18']].sum()
-
-grouped_data.plot(kind='bar', stacked=True, figsize=(10, 7))
-
-# Add title and label 
-plt.title('Number of Children by Age Group and Neighborhood')
-plt.xlabel('Neighborhood')
-plt.ylabel('Number of Children')
-plt.xticks(rotation=0)  
-
-# Add the title
-plt.legend(title='Age groups', bbox_to_anchor=(1.05, 1), loc='upper left')
-
-# Show the list
-plt.tight_layout()  
-plt.show()
-```
-![images](/Age%20group%20of%20child.png)
 
 ###### After that we need to check those children are always at home
 
@@ -89,7 +59,7 @@ plt.legend(title='Age groups at home', bbox_to_anchor=(1.05, 1), loc='upper left
 plt.tight_layout()  
 plt.show()
 ```
-![images](/check.png)
+![images](check.png)
 
 ##### Their parent are most of them is full time job
 
@@ -115,7 +85,7 @@ plt.yticks(fontsize=12)
 plt.tight_layout()  
 plt.show()
 ```
-![images](/job%20type.png)
+![images](job%20type.png)
 
 ##### Can we therefore assume that most parents have full-time jobs and that most children are kept at home. This is how children spend most of their time on their cell phones.
 
@@ -143,7 +113,7 @@ plt.yticks(fontsize=12)
 plt.tight_layout()  
 plt.show()
 ```
-![images](/Age%20of%20owning%20the%20phone.png)
+![images](Age%20of%20owning%20the%20phone.png)
 
 ##### We can observe again that they live in that part of the U.S.
 
@@ -170,6 +140,56 @@ plt.tight_layout()
 plt.show()
 '''The South is economically depressed(or not good from history) relative to the rest of the country'''
 ```
-![images](/living%20area.png)
+![images](living%20area.png)
 
 ##### Historically, the South is not considered economically prosperous. So parents may be neglecting their children because of their job, thus allowing children to become addicted to online socializing or video games, etc.
+
+### 1. Kids are more addicted on smartphone and TV
+``` python
+import pandas as pd
+import matplotlib.pyplot as plt
+
+# Load the CSV file
+file_path = 'pre_processed_data.csv'  
+data = pd.read_csv(file_path)
+
+# Selecting and renaming the required columns
+columns_of_interest = ['CHD_smartphone', 'CHD_voice_assistant', 'CHD_gaming_console', 'CHD_tablet', 'CHD_computer', 'CHD_tv']
+display_column_names = {'CHD_smartphone': 'Smartphone', 'CHD_voice_assistant': 'Voice Assistant', 'CHD_gaming_console': 'Gaming Console', 'CHD_tablet': 'Tablet', 'CHD_computer': 'Computer', 'CHD_tv': 'TV'}
+data_selected = data[columns_of_interest].rename(columns=display_column_names)
+
+# Calculating the percentage of 'Yes' and 'No' for each column
+percentages = {}
+for col in display_column_names.values():
+    counts = data_selected[col].value_counts(normalize=True)
+    percentages[col] = {
+        'Yes': counts.get('Yes, my child uses or interacts with this', 0) * 100,
+        'No': counts.get('No, my child does not use or interact with this', 0) * 100
+    }
+
+# Creating a DataFrame for easy plotting
+percentages_df = pd.DataFrame(percentages).T
+
+# Plotting with percentage annotations
+fig, ax = plt.subplots(figsize=(10, 6))
+percentages_df.plot(kind='bar', stacked=True, ax=ax)
+
+# Adding the percentage annotations
+for p in ax.patches:
+    width = p.get_width()
+    height = p.get_height()
+    x, y = p.get_xy() 
+    ax.annotate(f'{height:.1f}%', (x + width/2, y + height/2), ha='center')
+
+# Setting the plot details
+plt.title('Percentage of Yes/No Responses for Different Technologies')
+plt.xlabel('Technologies')
+plt.ylabel('Percentage (%)')
+plt.xticks(rotation=45)
+plt.legend(title='Response')
+plt.tight_layout()
+
+# Show the plot
+plt.show()
+```
+![image](last%20picture.png)
