@@ -105,11 +105,11 @@
         "Refused": 4
     },
     "Feel_pressurised_to_share": {
+        "Often": 4,
+        "Sometimes": 3,
         "Rarely": 0,
         "Never": 1,
         "Missing": 2,
-        "Sometimes": 3,
-        "Often": 4,
         "Refused": 5
     },
     "Harm_vs_benifits": {
@@ -120,9 +120,9 @@
     "ML_learn_social_skills": {
         "Hurt a lot": 0,
         "Hurt a little": 1,
-        "Make no difference": 2,
-        "Help a little": 3,
         "Help a lot": 4,
+        "Help a little": 3,
+        "Make no difference": 2,
         "Refused": 5
     },
     "ML_be_creative": {
@@ -142,12 +142,12 @@
         "Refused": 5
     },
     "ML_do_well_in_school": {
+        "Hurt a lot": 4,
         "Hurt a little": 0,
+        "Help a lot": 5,
         "Help a little": 1,
         "Make no difference": 2,
-        "Refused": 3,
-        "Hurt a lot": 4,
-        "Help a lot": 5
+        "Refused": 3
     },
     "ML_healthy_frienships": {
         "Hurt a lot": 0,
@@ -178,13 +178,13 @@
         "Refused": 7
     },
     "ACCEPT_own_smartphone": {
-        "12-14 years old": 0,
         "15-17 years old": 1,
+        "12-14 years old": 0,
         "9-11 years old": 2,
-        "0-2 years old": 3,
-        "This is not acceptable for children": 4,
         "5-8 years old": 5,
         "3-4 years old": 6,
+        "0-2 years old": 3,
+        "This is not acceptable for children": 4,
         "Refused": 7
     },
     "ACCEPT_own_tablet_computer": {
@@ -225,14 +225,14 @@
         "Refused": 3
     },
     "ADV_online_blogs": {
-        "No, I do not get advice or information about screen time from these": 0,
         "Yes, I get advice or information about screen time from these": 1,
-        "Refused": 2,
-        "Missing": 3
+        "No, I do not get advice or information about screen time from these": 0,
+        "Missing": 3,
+        "Refused": 2
     },
     "ADV_other_parents": {
-        "No, I do not get advice or information about screen time from these": 0,
         "Yes, I get advice or information about screen time from these": 1,
+        "No, I do not get advice or information about screen time from these": 0,
         "Refused": 2
     },
     "ADV_books_magazines": {
@@ -326,11 +326,11 @@
         "Missing": 3
     },
     "Child_first_age_smartphone": {
-        "Missing": 0,
         "9-11": 1,
-        "0-2": 2,
-        "3-4": 3,
         "5-8": 4,
+        "3-4": 3,
+        "0-2": 2,
+        "Missing": 0,
         "Refused": 5
     },
     "Child_owns_smartphones": {
@@ -348,10 +348,10 @@
         "Refused": 5
     },
     "RS_to_contact": {
-        "Missing": 0,
-        "Not a reason": 1,
         "Major reason": 2,
-        "Minor reason": 3
+        "Minor reason": 3,
+        "Not a reason": 1,
+        "Missing": 0
     },
     "RS_peer_kids_have": {
         "Missing": 0,
@@ -411,10 +411,10 @@
         "Missing": 4
     },
     "HCHU_smartphone": {
-        "Missing": 0,
         "Too much time": 1,
         "About the right amount of time": 2,
         "Too little time": 3,
+        "Missing": 0,
         "Refused": 4
     },
     "HCHU_socialmedia": {
@@ -432,12 +432,12 @@
         "Refused": 4
     },
     "CO_online_bully": {
-        "Somewhat concerned": 0,
-        "Not at all concerned": 1,
         "Very concerned": 2,
+        "Somewhat concerned": 0,
         "Not too concerned": 3,
-        "Refused": 4,
-        "Missing": 5
+        "Not at all concerned": 1,
+        "Missing": 5,
+        "Refused": 4
     },
     "CO_screen_time": {
         "Somewhat concerned": 0,
@@ -512,21 +512,21 @@
         "Refused": 5
     },
     "MNT_websites": {
-        "Missing": 0,
         "Yes, I do this": 1,
         "No, I do not do this": 2,
+        "Missing": 0,
         "Refused": 3
     },
     "MNT_take_away_mobile": {
-        "Missing": 0,
         "Yes, I do this": 1,
         "No, I do not do this": 2,
+        "Missing": 0,
         "Refused": 3
     },
     "MNT_screentime": {
-        "Missing": 0,
-        "No, I do not do this": 1,
         "Yes, I do this": 2,
+        "No, I do not do this": 1,
+        "Missing": 0,
         "Refused": 3
     },
     "MNT_call_records": {
@@ -584,12 +584,12 @@
         "Missing": 3
     },
     "How_often_youtube": {
-        "Missing": 0,
         "Several times a day": 1,
-        "Every few weeks": 2,
-        "A few times a week": 3,
         "Once a day": 4,
+        "A few times a week": 3,
+        "Every few weeks": 2,
         "Less often": 5,
+        "Missing": 0,
         "Refused": 6
     },
     "YT_new_cultures": {
