@@ -235,3 +235,47 @@ plt.tight_layout()
 plt.show()
 ```
 ![image](advice.png)
+
+##### Modified these two pieces of code
+```python
+import pandas as pd
+import matplotlib.pyplot as plt
+import seaborn as sns
+import numpy as np
+from matplotlib.ticker import PercentFormatter
+from sklearn.preprocessing import LabelEncoder
+
+# Load data
+data = pd.read_csv('pre_processed_data.csv')
+
+# Rename 'P_race' to 'Race' in the DataFrame
+data.rename(columns={'P_race': 'Race'}, inplace=True)
+
+# Continue with the visualization or other analysis
+dfm = data[['ADV_socialmedia', 'ADV_online_blogs', 'ADV_other_parents', 'ADV_books_magazines', 'ADV_doctors', 'ADV_teachers']].melt(var_name='advice_from', value_name='response')
+
+# Create a categorical plot with the new 'Race' column as the y-axis
+sns.catplot(kind='swarm', data=data, x='Child_owns_smartphone_age', y='Race', order=['0-2', '3-4', '5-8', '9-11'], hue='Child_first_age_smartphone', aspect=1.6)
+
+plt.show()
+```
+
+```python
+import pandas as pd
+import matplotlib.pyplot as plt
+import seaborn as sns
+import numpy as np
+from matplotlib.ticker import PercentFormatter
+from sklearn.preprocessing import LabelEncoder
+
+
+data = pd.read_csv('pre_processed_data.csv')
+
+if 'P_employment_type' in data.columns:
+    data.rename(columns={'P_employment_type': 'employment_type'}, inplace=True)
+
+dfm = data[['ADV_socialmedia', 'ADV_online_blogs', 'ADV_other_parents', 'ADV_books_magazines', 'ADV_doctors', 'ADV_teachers']].melt(var_name='advice_from', value_name='response')
+
+sns.catplot(kind='swarm', data=data, x='Child_owns_smartphone_age', y='employment_type', order=['0-2', '3-4', '5-8', '9-11'], hue='Child_first_age_smartphone')
+plt.show()
+```
