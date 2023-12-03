@@ -16,6 +16,24 @@ const StyledRadioButton = styled.input`
 `;
 
 export default function Home() {
+  const question_keys_map = {
+    "Time_spent_together": "When thinking about your role as a parent, how well do you rate the job that you do?",
+    "ACCEPT_own_smartphone": "In general, at what age do you think it is acceptable for a child to have their OWN cellphone?",
+    "ML_learn_social_skills": "Still thinking about children who are 11 years old or younger, do you think that using smartphones will help or hurt their ability to learn effective social skills?",
+    "ML_do_well_in_school": "Still thinking about children who are 11 years old or younger, do you think that using smartphones will help or hurt their ability to do well in school?",
+    "Feel_pressurised_to_share": "How often, if ever, do you feel pressure to only post things on social media sites that make you look like a good parent to others?",
+    "ADV_socialmedia": "Do you ever get parenting advice or information about screen time from social media?",
+    "ADV_online_blogs": "Do you ever get parenting advice or information about screen time from online blogs?",
+    "ADV_other_parents": "Do you ever get parenting advice or information about screen time from other parents?",
+    "How_often_youtube": "About how often does this child watch videos on YouTube?",
+    "CO_online_bully": "How concerned, if at all, are you that this child might ever be bullied online?",
+    "HCHU_smartphone": "Overall, how much time would you say this child spends on a smartphone?",
+    "MNT_websites": "Do you check the websites this child visits or the mobile apps they use?",
+    "MNT_take_away_mobile": "Do you take away this child’s smartphone or internet privileges as punishment?",
+    "MNT_screentime": "Do you limit the times of day or length of time when this child can use screens?",
+    "Child_first_age_smartphone": "At what age did this child begin engaging with a smartphone?",
+    "RS_to_contact": "How much, if at all, is you easily getting in contact with this child a reason for them to get a smartphone?",
+  }
   const question_keys = [
     "Time_spent_together",
     "ACCEPT_own_smartphone",
@@ -83,7 +101,7 @@ export default function Home() {
           return (
             <div>
               <h2 className="text-xl font-bold mb-2">
-                {index + 1}. {question_key}
+                {index + 1}. {(question_keys_map as any)[question_key]}
               </h2>
               <div className="flex flex-col mb-5">
                 {Object.entries((AnswerMappings as any)[question_key]).map(
