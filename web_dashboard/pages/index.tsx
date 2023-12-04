@@ -36,9 +36,9 @@ export default function Home() {
       2: "We could not make a confident conclusion of potential harm versus benefits for your child using a smartphone",
     },
     How_good_is_parent_parenting: {
-      0: "We think parenting is harder for you now than 20 years ago",
-      1: "We think parenting is the same difficulty for you now than 20 years ago",
-      2: "We think parenting is easier for you now than 20 years ago",
+      0: "Parenting is harder for you now than 20 years ago",
+      1: "Parenting is the same difficulty for you now than 20 years ago",
+      2: "Parenting is easier for you now than 20 years ago",
       3: "We could not make a confident conclusion of how difficult parenting is for you now than 20 years ago",
     },
   };
