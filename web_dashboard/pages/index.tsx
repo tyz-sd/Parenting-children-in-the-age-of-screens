@@ -1,4 +1,11 @@
-import Image from "next/image";
+/*
+Web Dashboard
+
+Written by Kyle Wade (https://github.com/kyle1373)
+
+This page lists 16 questions for the user to answer. When the user clicks submit, a POST request is sent to the python server in /python_server/app.py which runs the model to predict if the parent's child's screentime is helping or hurting them and if parenting is easier or harder for them compared to 20 years ago.
+*/
+
 import { Inter } from "next/font/google";
 import AnswerMappings from "../../mappings.json";
 import { useState } from "react";
@@ -12,7 +19,6 @@ const StyledRadioButton = styled.input`
   cursor: pointer;
   margin-bottom: 5px;
   margin-top: 5px;
-  // Add more styles as needed
 `;
 
 export default function Home() {
@@ -27,6 +33,7 @@ export default function Home() {
   interface ApiResult {
     Does_screen_time_harm_or_benefit: number;
     How_good_is_parent_parenting: number;
+    error: string;
   }
 
   const apiResultsMappings: ApiResultsMappings = {
@@ -42,6 +49,7 @@ export default function Home() {
       3: "We could not make a confident conclusion of how difficult parenting is for you now than 20 years ago",
     },
   };
+
   const question_keys_map = {
     Time_spent_together:
       "When thinking about your role as a parent, how well do you rate the job that you do?",
@@ -76,6 +84,7 @@ export default function Home() {
     RS_to_contact:
       "How much, if at all, is you easily getting in contact with this child a reason for them to get a smartphone?",
   };
+
   const question_keys = [
     "Time_spent_together",
     "ACCEPT_own_smartphone",
@@ -131,7 +140,19 @@ export default function Home() {
 
     console.log(response);
 
+    if(!response.ok){
+      const message = "Could not connect to server. Check that the server is running correctly\n\n" + response.statusText;
+      setPredictions([message]);
+      return;
+    }
+
     const result: ApiResult = await response.json();
+
+    if (result.error) {
+      const message = "An API error occurred: " + result.error;
+      setPredictions([message]);
+      return;
+    }
 
     const harmVsBenefitKey: ApiResultsMappingKeys =
       "Does_screen_time_harm_or_benefit";
@@ -176,7 +197,9 @@ export default function Home() {
                             handleRadioChange(question_key, value)
                           }
                         />
-                        <label>{answer === "Refused" ? "Refuse to answer" : answer}</label>
+                        <label>
+                          {answer === "Refused" ? "Refuse to answer" : answer}
+                        </label>
                       </div>
                     );
                   }

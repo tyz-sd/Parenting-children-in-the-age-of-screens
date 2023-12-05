@@ -8,13 +8,13 @@ from joblib import load
 
 
 def prediction_How_is_curret_days_parenting(ans_list):
-    model_for_how_is_curret_days_parenting = load('./model/random_forest_model_15.joblib')
+    model_for_how_is_curret_days_parenting = load('./model_predictor/model/random_forest_model_15.joblib')
     categorical_columns1 = ['Time_spent_together' , 'ACCEPT_own_smartphone', 'ML_learn_social_skills', 
                             'ML_do_well_in_school', 'Feel_pressurised_to_share', 'ADV_socialmedia',
                             'ADV_online_blogs','ADV_other_parents','How_often_youtube','CO_online_bully',
                             'HCHU_smartphone','MNT_websites','MNT_take_away_mobile','MNT_screentime',
                             'Child_first_age_smartphone','RS_to_contact']
-    data = pd.read_csv('target_data.csv')
+    data = pd.read_csv('./model_predictor/target_data.csv')
     data = data[categorical_columns1]
     data.loc[len(data)] = ans_list
     encoder = OneHotEncoder(sparse=False, handle_unknown='ignore')
@@ -31,13 +31,13 @@ def prediction_How_is_curret_days_parenting(ans_list):
 
 
 def prediction_Harm_vs_benifits(ans_list):
-    model_for_how_is_curret_days_parenting = load('./model/random_forest_model2_15.joblib')
+    model_for_how_is_curret_days_parenting = load('./model_predictor/model/random_forest_model2_15.joblib')
     categorical_columns1 = ['Time_spent_together' , 'ACCEPT_own_smartphone', 'ML_learn_social_skills', 
                             'ML_do_well_in_school', 'Feel_pressurised_to_share', 'ADV_socialmedia',
                             'ADV_online_blogs','ADV_other_parents','How_often_youtube','CO_online_bully',
                             'HCHU_smartphone','MNT_websites','MNT_take_away_mobile','MNT_screentime',
                             'Child_first_age_smartphone','RS_to_contact']
-    data = pd.read_csv('target_data.csv')
+    data = pd.read_csv('./model_predictor/target_data.csv')
     data = data[categorical_columns1]
     data.loc[len(data)] = ans_list
     encoder = OneHotEncoder(sparse=False, handle_unknown='ignore')

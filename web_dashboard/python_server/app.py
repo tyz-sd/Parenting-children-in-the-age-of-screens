@@ -4,7 +4,7 @@
 
 from flask import Flask, request, jsonify
 from flask_cors import CORS
-import prediction  # assuming prediction.py is in the same directory
+import model_predictor.prediction
 
 app = Flask(__name__)
 
@@ -15,8 +15,8 @@ def analyze_data():
         input_data = request.json
 
         # Run functions from prediction.py
-        result1 = prediction.prediction_How_is_curret_days_parenting(input_data)
-        result2 = prediction.prediction_Harm_vs_benifits(input_data)
+        result1 = model_predictor.prediction.prediction_How_is_curret_days_parenting(input_data)
+        result2 = model_predictor.prediction.prediction_Harm_vs_benifits(input_data)
 
         # Prepare the result
         result = {
