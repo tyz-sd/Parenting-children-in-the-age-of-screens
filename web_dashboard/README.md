@@ -2,7 +2,7 @@
 
 This dashboard is written in [Next.js](https://nextjs.org/) bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-All of the project files in this directory are mainly default template files which were pregenerated using `create-next-app`. The files of interest that were written by the group are in `pages` and `python_server`.
+All of the project files in this directory are mainly default template files which were generated using `create-next-app`. The files of interest that were written by the group are `pages/index.tsx` and all of the files in `python_server`.
 
 
 
