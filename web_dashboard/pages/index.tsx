@@ -6,6 +6,7 @@ Written by Kyle Wade (https://github.com/kyle1373)
 This page lists 16 questions for the user to answer. When the user clicks submit, a POST request is sent to the python server in /python_server/app.py which runs the model to predict if the parent's child's screentime is helping or hurting them and if parenting is easier or harder for them compared to 20 years ago.
 */
 
+import Image from "next/image";
 import { Inter } from "next/font/google";
 import AnswerMappings from "../../mappings.json";
 import { useState } from "react";
@@ -38,14 +39,14 @@ export default function Home() {
 
   const apiResultsMappings: ApiResultsMappings = {
     Does_screen_time_harm_or_benefit: {
-      0: "The potential harm that your child may face from having access to a smartphone outweighs the potential benefits",
-      1: "The potential benefits that your child may get from having access to a smartphone outweigh the potential harm",
-      2: "We could not make a confident conclusion of potential harm versus benefits for your child using a smartphone",
+      0: "You are one among the 74% people who feel smartphones do more harm than good",
+      1: "You are one among the 26% people who feel smartphones  are beneficial to children",
+      2: "Looks like you are ambiguous about smartphones being good or bad",
     },
     How_good_is_parent_parenting: {
-      0: "Parenting is harder for you now than 20 years ago",
-      1: "Parenting is the same difficulty for you now than 20 years ago",
-      2: "Parenting is easier for you now than 20 years ago",
+      0: "You are one among 68% of parents who feel parenting is harder now than 20 years ago",
+      1: "You are one among 27% people who feel parenting is the same now than 20 years ago",
+      2: "You are one among only 5% people  who feel Parenting is easier than 20 years ago",
       3: "We could not make a confident conclusion of how difficult parenting is for you now than 20 years ago",
     },
   };
@@ -130,7 +131,7 @@ export default function Home() {
 
     const answerList = question_keys.map((key) => answers[key]);
     console.log("Submitting:", answerList);
-
+ 
     // Send the data to your API endpoint
     const response = await fetch("http://127.0.0.1:5000/analyze", {
       method: "POST",
@@ -140,8 +141,10 @@ export default function Home() {
 
     console.log(response);
 
-    if(!response.ok){
-      const message = "Could not connect to server. Check that the server is running correctly\n\n" + response.statusText;
+    if (!response.ok) {
+      const message =
+        "Could not connect to server. Check that the server is running correctly\n\n" +
+        response.statusText;
       setPredictions([message]);
       return;
     }
@@ -211,6 +214,30 @@ export default function Home() {
 
         {predictions && (
           <div>
+            <div
+              style={{
+                display: "flex", 
+                maxWidth: "100%", // Ensures the container does not overflow its parent
+                overflow: "hidden", // Hides any overflow
+              }}
+            >
+              <img
+                style={{
+                  flex: "1", // Allows the image to grow to fill the container
+                  height: 400, // Ensures the image height does not exceed the container's height
+                }}
+                src={"hardervseasier.png"}
+                alt={"Harder vs Easier"}
+              />
+              <img
+                style={{
+                  flex: "1", // Same properties for the second image
+                  height: 400,
+                }}
+                src={"harmvsbenefit.png"}
+                alt={"Harm vs Benefit"}
+              />
+            </div>
             <h1 className="mt-5 text-lg font-bold">
               Based on your responses, we believe that...
               <br />
