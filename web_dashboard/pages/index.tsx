@@ -178,7 +178,7 @@ export default function Home() {
         <h1 className="text-center mb-10 text-4xl font-bold">Survey</h1>
         {question_keys.map((question_key, index) => {
           return (
-            <div>
+            <div key={question_key}>
               <h2 className="text-xl font-bold mb-2">
                 {index + 1}. {(question_keys_map as any)[question_key]}
                 {/* {question_key} */}
