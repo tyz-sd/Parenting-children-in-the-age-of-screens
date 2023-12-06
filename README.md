@@ -9,10 +9,11 @@ To execute the code, make sure you have all the necessary dependencies installed
 pip install -r requirements.txt
 
 The dependencies are as follows:
-    * numpy
-    * pandas
-    * matplotlib
-    * seaborn
+   -numpy
+   -pandas
+   -matplotlib
+   -seaborn
+
 
 Once the dependencies are installed, you can run the code by executing the following command:
 
