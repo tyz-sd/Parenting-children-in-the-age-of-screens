@@ -1,0 +1,746 @@
+{
+    "Device_type": {
+        "Smartphone": 0,
+        "Laptop/PC": 1,
+        "Tablet": 2
+    },
+    "Language": {
+        "English": 0,
+        "Spanish": 1
+    },
+    "Smartphone_user": {
+        "Yes, I have a smartphone": 0,
+        "No, I do not have a smartphone": 1,
+        "Refused": 2
+    },
+    "Social_media_user": {
+        "Yes, I use social media sites": 0,
+        "No, I do not use social media sites": 1,
+        "Refused": 2,
+        "Missing": 3
+    },
+    "Videogame_player": {
+        "No, I do not play video games": 0,
+        "Yes, I play video games": 1,
+        "Refused": 2
+    },
+    "TS_on_smartphone": {
+        "Too much time": 0,
+        "About the right amount of time": 1,
+        "Missing": 2,
+        "Too little time": 3,
+        "Refused": 4
+    },
+    "TS_on_socialmedia": {
+        "About the right amount of time": 0,
+        "Too little time": 1,
+        "Too much time": 2,
+        "Missing": 3,
+        "Refused": 4
+    },
+    "TS_on_videogames": {
+        "Missing": 0,
+        "Too little time": 1,
+        "About the right amount of time": 2,
+        "Too much time": 3,
+        "Refused": 4
+    },
+    "Kids_at_home": {
+        "Yes": 0,
+        "No": 1,
+        "Refused": 2,
+        "Missing": 3
+    },
+    "How_is_curret_days_parenting": {
+        "Harder than it was 20 years ago": 0,
+        "About the same": 1,
+        "Easier than it was 20 years ago": 2,
+        "Refused": 3
+    },
+    "As_a_parent_your_job_is": {
+        "The right amount of time together": 0,
+        "Too little time together": 1,
+        "Too much time together": 2,
+        "Refused": 3
+    },
+    "Time_spent_together": {
+        "A very good job": 0,
+        "A good job": 1,
+        "Only a fair job": 2,
+        "A poor job": 3,
+        "Refused": 4
+    },
+    "SP_in_socialmedia": {
+        "Yes, I have done this": 0,
+        "Missing": 1,
+        "No, I have never done this": 2,
+        "Refused": 3
+    },
+    "SP_abt_children_with_family_frnds": {
+        "Major reason": 0,
+        "Missing": 1,
+        "Not a reason": 2,
+        "Minor reason": 3,
+        "Refused": 4
+    },
+    "SP_child_accomplishments": {
+        "Major reason": 0,
+        "Missing": 1,
+        "Not a reason": 2,
+        "Minor reason": 3,
+        "Refused": 4
+    },
+    "Because_other_parents_share": {
+        "Not a reason": 0,
+        "Major reason": 1,
+        "Missing": 2,
+        "Minor reason": 3,
+        "Refused": 4
+    },
+    "How_much_other_people_share": {
+        "About the right amount about their young children": 0,
+        "Too much about their young children": 1,
+        "Missing": 2,
+        "Too little about their young children": 3,
+        "Refused": 4
+    },
+    "Feel_pressurised_to_share": {
+        "Often": 4,
+        "Sometimes": 3,
+        "Rarely": 0,
+        "Never": 1,
+        "Missing": 2,
+        "Refused": 5
+    },
+    "Harm_vs_benifits": {
+        "The potential harm that most children may face from having access to a smartphone outweighs the potential benefits": 0,
+        "The potential benefits that most children may get from having access to a smartphone outweigh the potential harm": 1,
+        "Refused": 2
+    },
+    "ML_learn_social_skills": {
+        "Hurt a lot": 0,
+        "Hurt a little": 1,
+        "Help a lot": 4,
+        "Help a little": 3,
+        "Make no difference": 2,
+        "Refused": 5
+    },
+    "ML_be_creative": {
+        "Make no difference": 0,
+        "Hurt a little": 1,
+        "Help a lot": 2,
+        "Hurt a lot": 3,
+        "Help a little": 4,
+        "Refused": 5
+    },
+    "ML_pursue_interest": {
+        "Hurt a little": 0,
+        "Help a little": 1,
+        "Make no difference": 2,
+        "Help a lot": 3,
+        "Hurt a lot": 4,
+        "Refused": 5
+    },
+    "ML_do_well_in_school": {
+        "Hurt a lot": 4,
+        "Hurt a little": 0,
+        "Help a lot": 5,
+        "Help a little": 1,
+        "Make no difference": 2,
+        "Refused": 3
+    },
+    "ML_healthy_frienships": {
+        "Hurt a lot": 0,
+        "Hurt a little": 1,
+        "Make no difference": 2,
+        "Help a little": 3,
+        "Help a lot": 4,
+        "Refused": 5
+    },
+    "ACCEPT_social_media": {
+        "12-14 years old": 0,
+        "15-17 years old or older": 1,
+        "This is not acceptable for children": 2,
+        "5-8 years old": 3,
+        "9-11 years old": 4,
+        "0-2 years old": 5,
+        "3-4 years old": 6,
+        "Refused": 7
+    },
+    "ACCEPT_videogames": {
+        "9-11 years old": 0,
+        "5-8 years old": 1,
+        "3-4 years old": 2,
+        "0-2 years old": 3,
+        "This is not acceptable for children": 4,
+        "12-14 years old": 5,
+        "15-17 years old or older": 6,
+        "Refused": 7
+    },
+    "ACCEPT_own_smartphone": {
+        "15-17 years old": 1,
+        "12-14 years old": 0,
+        "9-11 years old": 2,
+        "5-8 years old": 5,
+        "3-4 years old": 6,
+        "0-2 years old": 3,
+        "This is not acceptable for children": 4,
+        "Refused": 7
+    },
+    "ACCEPT_own_tablet_computer": {
+        "5-8 years old": 0,
+        "15-17 years old": 1,
+        "3-4 years old": 2,
+        "This is not acceptable for children": 3,
+        "12-14 years old": 4,
+        "9-11 years old": 5,
+        "0-2 years old": 6,
+        "Refused": 7
+    },
+    "RE_tech_companies": {
+        "A lot": 0,
+        "Some": 1,
+        "None at all": 2,
+        "Not much": 3,
+        "Refused": 4
+    },
+    "RE_government": {
+        "Some": 0,
+        "Not much": 1,
+        "None at all": 2,
+        "A lot": 3,
+        "Refused": 4
+    },
+    "RE_parents": {
+        "A lot": 0,
+        "None at all": 1,
+        "Some": 2,
+        "Not much": 3,
+        "Refused": 4
+    },
+    "ADV_socialmedia": {
+        "Yes, I get advice or information about screen time from these": 0,
+        "No, I do not get advice or information about screen time from these": 1,
+        "Missing": 2,
+        "Refused": 3
+    },
+    "ADV_online_blogs": {
+        "Yes, I get advice or information about screen time from these": 1,
+        "No, I do not get advice or information about screen time from these": 0,
+        "Missing": 3,
+        "Refused": 2
+    },
+    "ADV_other_parents": {
+        "Yes, I get advice or information about screen time from these": 1,
+        "No, I do not get advice or information about screen time from these": 0,
+        "Refused": 2
+    },
+    "ADV_books_magazines": {
+        "Yes, I get advice or information about screen time from these": 0,
+        "No, I do not get advice or information about screen time from these": 1,
+        "Refused": 2
+    },
+    "ADV_doctors": {
+        "Yes, I get advice or information about screen time from these": 0,
+        "No, I do not get advice or information about screen time from these": 1,
+        "Refused": 2
+    },
+    "ADV_teachers": {
+        "Yes, I get advice or information about screen time from these": 0,
+        "No, I do not get advice or information about screen time from these": 1,
+        "Missing": 2,
+        "Refused": 3
+    },
+    "Confidence_abt_screen_time": {
+        "Somewhat confident": 0,
+        "Very confident": 1,
+        "Not too confident": 2,
+        "Not at all confident": 3,
+        "Refused": 4,
+        "Missing": 5
+    },
+    "How_often_distracted": {
+        "Sometimes": 0,
+        "Rarely": 1,
+        "Often": 2,
+        "Refused": 3,
+        "Never": 4,
+        "Missing": 5
+    },
+    "Child_age_0_11": {
+        "0": 0,
+        "10": 1,
+        "3": 2,
+        "5": 3,
+        "11": 4,
+        "4": 5,
+        "1": 6,
+        "8": 7,
+        "2": 8,
+        "7": 9,
+        "9": 10,
+        "6": 11,
+        "Refused": 12,
+        "Missing": 13
+    },
+    "Child_gender": {
+        "Girl": 0,
+        "Boy": 1,
+        "Refused": 2,
+        "Missing": 3
+    },
+    "CHD_tv": {
+        "No, my child does not use or interact with this": 0,
+        "Yes, my child uses or interacts with this": 1,
+        "Refused": 2,
+        "Missing": 3
+    },
+    "CHD_computer": {
+        "No, my child does not use or interact with this": 0,
+        "Yes, my child uses or interacts with this": 1,
+        "Missing": 2,
+        "Refused": 3
+    },
+    "CHD_tablet": {
+        "No, my child does not use or interact with this": 0,
+        "Yes, my child uses or interacts with this": 1,
+        "Missing": 2,
+        "Refused": 3
+    },
+    "CHD_gaming_console": {
+        "No, my child does not use or interact with this": 0,
+        "Yes, my child uses or interacts with this": 1,
+        "Missing": 2,
+        "Refused": 3
+    },
+    "CHD_voice_assistant": {
+        "No, my child does not use or interact with this": 0,
+        "Yes, my child uses or interacts with this": 1,
+        "Refused": 2,
+        "Missing": 3
+    },
+    "CHD_smartphone": {
+        "No, my child does not use or interact with this": 0,
+        "Yes, my child uses or interacts with this": 1,
+        "Refused": 2,
+        "Missing": 3
+    },
+    "Child_first_age_smartphone": {
+        "9-11": 1,
+        "5-8": 4,
+        "3-4": 3,
+        "0-2": 2,
+        "Missing": 0,
+        "Refused": 5
+    },
+    "Child_owns_smartphones": {
+        "Missing": 0,
+        "Yes, my child has their own smartphone": 1,
+        "No, my child does not have their own smartphone": 2,
+        "Refused": 3
+    },
+    "Child_owns_smartphone_age": {
+        "Missing": 0,
+        "9-11": 1,
+        "5-8": 2,
+        "0-2": 3,
+        "3-4": 4,
+        "Refused": 5
+    },
+    "RS_to_contact": {
+        "Major reason": 2,
+        "Minor reason": 3,
+        "Not a reason": 1,
+        "Missing": 0
+    },
+    "RS_peer_kids_have": {
+        "Missing": 0,
+        "Not a reason": 1,
+        "Minor reason": 2,
+        "Major reason": 3,
+        "Refused": 4
+    },
+    "RS_entertainment": {
+        "Missing": 0,
+        "Major reason": 1,
+        "Not a reason": 2,
+        "Minor reason": 3,
+        "Refused": 4
+    },
+    "RS_to_do_homework": {
+        "Missing": 0,
+        "Minor reason": 1,
+        "Not a reason": 2,
+        "Major reason": 3
+    },
+    "CHSO_facebook": {
+        "No, my child does not use this": 0,
+        "Yes, my child uses this": 1,
+        "Missing": 2,
+        "Refused": 3
+    },
+    "CHSO_instagram": {
+        "No, my child does not use this": 0,
+        "Yes, my child uses this": 1,
+        "Refused": 2,
+        "Missing": 3
+    },
+    "CHSO_snapchat": {
+        "No, my child does not use this": 0,
+        "Refused": 1,
+        "Yes, my child uses this": 2,
+        "Missing": 3
+    },
+    "CHSO_tiktok": {
+        "No, my child does not use this": 0,
+        "Yes, my child uses this": 1,
+        "Missing": 2,
+        "Refused": 3
+    },
+    "CHSO_other_websites": {
+        "No, my child does not use this": 0,
+        "Yes, my child uses this": 1,
+        "Refused": 2,
+        "Missing": 3
+    },
+    "Child_physical_activity": {
+        "About the right amount of time": 0,
+        "Too little time": 1,
+        "Too much time": 2,
+        "Refused": 3,
+        "Missing": 4
+    },
+    "HCHU_smartphone": {
+        "Too much time": 1,
+        "About the right amount of time": 2,
+        "Too little time": 3,
+        "Missing": 0,
+        "Refused": 4
+    },
+    "HCHU_socialmedia": {
+        "Missing": 0,
+        "About the right amount of time": 1,
+        "Too much time": 2,
+        "Too little time": 3,
+        "Refused": 4
+    },
+    "HCHU_videogames": {
+        "Missing": 0,
+        "Too much time": 1,
+        "About the right amount of time": 2,
+        "Too little time": 3,
+        "Refused": 4
+    },
+    "CO_online_bully": {
+        "Very concerned": 2,
+        "Somewhat concerned": 0,
+        "Not too concerned": 3,
+        "Not at all concerned": 1,
+        "Missing": 5,
+        "Refused": 4
+    },
+    "CO_screen_time": {
+        "Somewhat concerned": 0,
+        "Very concerned": 1,
+        "Not at all concerned": 2,
+        "Not too concerned": 3,
+        "Refused": 4,
+        "Missing": 5
+    },
+    "CO_sexual_explicit_content": {
+        "Somewhat concerned": 0,
+        "Very concerned": 1,
+        "Not at all concerned": 2,
+        "Not too concerned": 3,
+        "Refused": 4,
+        "Missing": 5
+    },
+    "CO_online_fraud": {
+        "Somewhat concerned": 0,
+        "Not at all concerned": 1,
+        "Very concerned": 2,
+        "Not too concerned": 3,
+        "Refused": 4,
+        "Missing": 5
+    },
+    "CO_violent_content": {
+        "Somewhat concerned": 0,
+        "Very concerned": 1,
+        "Not at all concerned": 2,
+        "Not too concerned": 3,
+        "Refused": 4,
+        "Missing": 5
+    },
+    "AW_on_tv": {
+        "Missing": 0,
+        "Very confident": 1,
+        "Not confident at all": 2,
+        "Somewhat confident": 3,
+        "Not too confident": 4,
+        "Refused": 5
+    },
+    "AW_videos": {
+        "Missing": 0,
+        "Very confident": 1,
+        "Not confident at all": 2,
+        "Somewhat confident": 3,
+        "Not too confident": 4,
+        "Refused": 5
+    },
+    "AW_websites": {
+        "Missing": 0,
+        "Very confident": 1,
+        "Not confident at all": 2,
+        "Somewhat confident": 3,
+        "Not too confident": 4,
+        "Refused": 5
+    },
+    "AW_socialmedia": {
+        "Missing": 0,
+        "Very confident": 1,
+        "Not confident at all": 2,
+        "Somewhat confident": 3,
+        "Not too confident": 4,
+        "Refused": 5
+    },
+    "AW_videogames": {
+        "Missing": 0,
+        "Very confident": 1,
+        "Not confident at all": 2,
+        "Somewhat confident": 3,
+        "Not too confident": 4,
+        "Refused": 5
+    },
+    "MNT_websites": {
+        "Yes, I do this": 1,
+        "No, I do not do this": 2,
+        "Missing": 0,
+        "Refused": 3
+    },
+    "MNT_take_away_mobile": {
+        "Yes, I do this": 1,
+        "No, I do not do this": 2,
+        "Missing": 0,
+        "Refused": 3
+    },
+    "MNT_screentime": {
+        "Yes, I do this": 2,
+        "No, I do not do this": 1,
+        "Missing": 0,
+        "Refused": 3
+    },
+    "MNT_call_records": {
+        "Missing": 0,
+        "No, I do not do this": 1,
+        "Yes, I do this": 2,
+        "Refused": 3
+    },
+    "MNT_parental_controls": {
+        "Missing": 0,
+        "Yes, I do this": 1,
+        "No, I do not do this": 2,
+        "Refused": 3
+    },
+    "MNT_socialmedia": {
+        "Missing": 0,
+        "No, I do not do this": 1,
+        "Yes, I do this": 2,
+        "Refused": 3
+    },
+    "MNT_gps": {
+        "Missing": 0,
+        "No, I do not do this": 1,
+        "Yes, I do this": 2,
+        "Refused": 3
+    },
+    "ALLOW_home_dinner": {
+        "No, I would not allow this": 0,
+        "Yes, I would allow this": 1,
+        "Refused": 2,
+        "Missing": 3
+    },
+    "ALLOW_outside_dinner": {
+        "No, I would not allow this": 0,
+        "Yes, I would allow this": 1,
+        "Refused": 2,
+        "Missing": 3
+    },
+    "ALLOW_before_bed": {
+        "No, I would not allow this": 0,
+        "Yes, I would allow this": 1,
+        "Refused": 2,
+        "Missing": 3
+    },
+    "ALLOW_in_car": {
+        "No, I would not allow this": 0,
+        "Yes, I would allow this": 1,
+        "Refused": 2,
+        "Missing": 3
+    },
+    "Uses_youtube": {
+        "No, my child does not watch videos on YouTube": 0,
+        "Yes, my child watches videos on YouTube": 1,
+        "Refused": 2,
+        "Missing": 3
+    },
+    "How_often_youtube": {
+        "Several times a day": 1,
+        "Once a day": 4,
+        "A few times a week": 3,
+        "Every few weeks": 2,
+        "Less often": 5,
+        "Missing": 0,
+        "Refused": 6
+    },
+    "YT_new_cultures": {
+        "Missing": 0,
+        "Often": 1,
+        "Sometimes": 2,
+        "Never": 3,
+        "Rarely": 4,
+        "Refused": 5
+    },
+    "YT_learn_new_things": {
+        "Missing": 0,
+        "Sometimes": 1,
+        "Never": 2,
+        "Often": 3,
+        "Rarely": 4,
+        "Refused": 5
+    },
+    "YT_entertainment": {
+        "Missing": 0,
+        "Often": 1,
+        "Sometimes": 2,
+        "Never": 3,
+        "Rarely": 4,
+        "Refused": 5
+    },
+    "YT_inappropriate_videos": {
+        "Missing": 0,
+        "Yes, they have encountered inappropriate videos": 1,
+        "No, they have not encountered inappropriate videos": 2,
+        "Refused": 3
+    },
+    "YT_concern_inappropriate": {
+        "Missing": 0,
+        "Very concerned": 1,
+        "Not too concerned": 2,
+        "Not at all concerned": 3,
+        "Somewhat concerned": 4,
+        "Refused": 5
+    },
+    "YT_concern_ads": {
+        "Missing": 0,
+        "Not at all concerned": 1,
+        "Not too concerned": 2,
+        "Somewhat concerned": 3,
+        "Very concerned": 4,
+        "Refused": 5
+    },
+    "YT_concern_recommended": {
+        "Missing": 0,
+        "Somewhat concerned": 1,
+        "Not too concerned": 2,
+        "Not at all concerned": 3,
+        "Very concerned": 4,
+        "Refused": 5
+    },
+    "YT_preventing_inappropriate": {
+        "Missing": 0,
+        "An excellent job": 1,
+        "Only a fair job": 2,
+        "A good job": 3,
+        "A poor job": 4,
+        "Refused": 5
+    },
+    "Child_bullied_online": {
+        "Missing": 0,
+        "No, my child has not been harassed or bullied online": 1,
+        "Yes, my child has been harassed or bullied online": 2,
+        "Refused": 3
+    },
+    "Confidence_that_child_tells_abt_bullying": {
+        "Missing": 0,
+        "Not too confident": 1,
+        "Very confident": 2,
+        "Somewhat confident": 3,
+        "Refused": 4,
+        "Not at all confident": 5
+    },
+    "P_metropolitan": {
+        "Metropolitan": 0,
+        "Non-metropolitan": 1
+    },
+    "P_region": {
+        "Midwest": 0,
+        "West": 1,
+        "South": 2,
+        "Northeast": 3
+    },
+    "P_age_categories": {
+        "30-49": 0,
+        "18-29": 1,
+        "50-64": 2,
+        "65+": 3,
+        "Refused": 4
+    },
+    "P_gender": {
+        "Female": 0,
+        "Male": 1,
+        "Refused": 2
+    },
+    "P_education_level": {
+        "College graduate/some post grad": 0,
+        "Associate's degree": 1,
+        "High school graduate": 2,
+        "Some college, no degree": 3,
+        "Postgraduate": 4,
+        "Less than high school": 5,
+        "Refused": 6
+    },
+    "P_race": {
+        "White non-Hispanic": 0,
+        "Black non-Hispanic": 1,
+        "Other": 2,
+        "Hispanic": 3,
+        "Refused": 4
+    },
+    "P_nationality": {
+        "U.S.": 0,
+        "Another country": 1,
+        "Refused": 2,
+        "Mexico": 3,
+        "Puerto Rico": 4,
+        "Cuba": 5,
+        "Other U.S. territory": 6
+    },
+    "P_marital_status": {
+        "Married": 0,
+        "Living with a partner": 1,
+        "Widowed": 2,
+        "Never been married": 3,
+        "Divorced": 4,
+        "Separated": 5,
+        "Refused": 6
+    },
+    "P_supporting_party": {
+        "Republican": 0,
+        "Something else": 1,
+        "Democrat": 2,
+        "Independent": 3,
+        "Refused": 4
+    },
+    "P_employment_type": {
+        "Not employed": 0,
+        "Part-time": 1,
+        "Full-time": 2,
+        "Refused": 3
+    },
+    "P_neighborhood": {
+        "Suburban": 0,
+        "Urban": 1,
+        "Rural": 2,
+        "Refused": 3
+    }
+}
