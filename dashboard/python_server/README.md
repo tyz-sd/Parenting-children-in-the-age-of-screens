@@ -7,3 +7,6 @@ This contains the python file to run the server. Run `python app.py`
 
 #### result.csv
 This is the result after calculations in the `model_predictor` and is returned within the `prediction_How_is_curret_days_parenting()` and `prediction_Harm_vs_benifits` predictor functions.
+
+#### model_predictor
+This directory contains the files and folders used to generate and run our model. See the directory for more information.
