@@ -28,10 +28,10 @@ This directory contains the files and folders used to generate and run our model
 This is the original data from the Pew Research study.
 
 ### datasets/correlations.csv
-This contains the correlations between two columns in the original data/
+This contains the correlations between two columns in the original data.
 
 ### datasets/data_pre_processing.ipynb
-This is the Jupyter Notebook which does the data preprocessing.
+This is the Jupyter Notebook which does the data preprocessing algorithm.
 
 ### datasets/numeric_data.csv
 This is the original numeric data parsed out from the original dataset.
