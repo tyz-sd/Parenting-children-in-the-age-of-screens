@@ -29,12 +29,7 @@ This contains the Python server which accepts a POST request endpoint with quest
 #### python_server/result.csv
 This is the result after calculations in the `model_predictor` and is returned within the `prediction_How_is_curret_days_parenting()` and `prediction_Harm_vs_benifits()` predictor functions.
 
-
-
-#### result.csv
-This is the result after calculations in the `model_predictor` and is returned within the `prediction_How_is_curret_days_parenting()` and `prediction_Harm_vs_benifits` predictor functions.
-
-#### model_predictor
+#### python_server/model_predictor
 This directory contains the files and folders used to generate and run our model. See the directory for more information.
 
 ## Third-Party Modules Used
