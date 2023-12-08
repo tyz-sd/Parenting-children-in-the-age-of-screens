@@ -49,7 +49,7 @@ This contains the individual work each group member has done as a breakdown.
 This contains the Jupyter Notebook for visualizations that were done to make conclusions about our original data.
 
 ### visualizations/Visualizations.py
-This file contains classes and helper functions to create the visualizations for our analyis. The output is the same as Visualizations.ipynb.
+This file contains classes and helper functions to create the visualizations for our analysis. The output is the same as `Visualizations.ipynb`.
 
 ## Third-Party Modules Used
 sklearn  
