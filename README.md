@@ -33,17 +33,17 @@ This is the result after calculations in the `model_predictor` and is returned w
 This directory contains the files and folders used to generate and run our model. See the directory for more information.
 
 ## Third-Party Modules Used
-sklearn
-pandas
-json
-numpy
-requests
-flask
-flask_cors
-seaborn
-matplotlib
-os
-joblib
+sklearn  
+pandas  
+json  
+numpy  
+requests  
+flask  
+flask_cors  
+seaborn  
+matplotlib  
+os  
+joblib  
 
 ## Steps to Generate Dataset
 TODO
