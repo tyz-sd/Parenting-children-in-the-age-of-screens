@@ -1,14 +1,44 @@
 /*
-Web Dashboard
+   Web Dashboard
 
-Written by Kyle Wade (https://github.com/kyle1373)
+   Written by Kyle Wade (https://github.com/kyle1373)
 
-This page lists 16 questions for the user to answer. When the user clicks submit, a POST request is sent to the python server in /python_server/app.py which runs the model to predict if the parent's child's screentime is helping or hurting them and if parenting is easier or harder for them compared to 20 years ago.
+   Description:
+   This web page displays 16 questions for the user to answer. When the user clicks submit, a POST request is sent to the Python server located at "/python_server/app.py". The server runs a model to predict if a child's screen time is beneficial or harmful and whether parenting has become easier or harder compared to 20 years ago.
+
+   Usage:
+   Access this page by navigating to https://localhost:3000 after running "yarn dev".
+
+   Dependencies:
+   - Next.js (React framework)
+   - Styled-components (for styling)
+   - "mappings.json" (a JSON file containing question-answer mappings)
+   - "Inter" font from Google Fonts
+
+   Components:
+   - Home: The main React component responsible for rendering the survey questions and handling user responses.
+
+   State and Variables:
+   - answers: Stores user responses to survey questions.
+   - predictions: Stores the predictions made by the Python server.
+   - apiResultsMappings: Maps numeric prediction values to descriptive strings.
+   - question_keys_map: Maps question keys to their descriptions.
+   - question_keys: Array of question keys used to iterate through questions.
+   - inter: Font style for text elements.
+
+   Functions:
+   - handleRadioChange: Updates the "answers" state when a radio button is selected.
+   - handleSubmit: Sends user responses to the server and updates the "predictions" state with the server's response.
+
+   Structure:
+   - The main component renders a list of survey questions with radio button options.
+   - When the user submits their answers, the data is sent to the server for analysis.
+   - The server's predictions are displayed along with images.
 */
 
 import Image from "next/image";
 import { Inter } from "next/font/google";
-import AnswerMappings from "../../mappings.json";
+import AnswerMappings from "../mappings.json";
 import { useState } from "react";
 import styled from "styled-components";
 
@@ -132,7 +162,7 @@ export default function Home() {
     const answerList = question_keys.map((key) => answers[key]);
     console.log("Submitting:", answerList);
  
-    // Send the data to your API endpoint
+    // Send the data to API endpoint
     const response = await fetch("http://127.0.0.1:5000/analyze", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
