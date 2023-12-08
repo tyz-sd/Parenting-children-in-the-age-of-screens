@@ -5,12 +5,8 @@ import numpy as np
 from  matplotlib.ticker import PercentFormatter
 import os
 import matplotlib
-print("hi")
-print(os.getcwd())
-# print(current_directory = os.getcwd())
-data=pd.read_csv('../datasets/pre_processed_data.csv')
-# Pre_processed_data.csv is the file which is used for visualizations.
 
+data=pd.read_csv('../datasets/pre_processed_data.csv')
 map_age_to_age_groups={'0':'0-2','1':'0-2','2':'0-2','3':'3-5','4':'3-5','5':'3-5','6':'6-11','7':'6-11','8':'6-11','9':'6-11','10':'6-11','11':'6-11'}
 data['Child_age_groups']=data['Child_age_0_11'].map(map_age_to_age_groups)
 
