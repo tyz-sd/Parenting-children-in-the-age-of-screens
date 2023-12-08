@@ -67,13 +67,13 @@ itertools
 tabulate  
 
 ## Steps to Generate Dataset
-Install the original dependencies and run `datasets/data_pre_processing.ipynb`
+Install the original dependencies above and run `datasets/data_pre_processing.ipynb`
 
 ## Steps to Run Visualizations
-Install the original dependencies and run `visualizations/Visualizations.ipynb`
+Install the original dependencies above and run `visualizations/Visualizations.ipynb`
 
 ## Steps to Run Web Dashboard
-Go to `dashboard`  
+Go to `dashboard/`  
 
 Install `node_modules` by calling `npm i` or `yarn`  
 
