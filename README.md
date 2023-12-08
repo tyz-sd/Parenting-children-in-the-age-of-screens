@@ -24,29 +24,31 @@ This contains the Python server which accepts a POST request endpoint with quest
 ### dashboard/python_server/model_predictor
 This directory contains the files and folders used to generate and run our model. See the directory for more information.
 
-### data
-This is the data from the Pew Research study.
+### data/
+This is the original data from the Pew Research study.
 
-### individual_work
+### datasets/correlations.csv
+TODO
+
+### datasets/data_pre_processing.ipynb
+TODO
+
+### datasets/mappings.json
+TODO
+
+### datasets/numeric_data.csv
+TODO
+
+### datasets/parenting.csv
+TODO
+
+### datasets/pre_processed_data.csv
+TODO
+
+### individual_work/
 This contains the individual work each group member has done as a breakdown.
 
-### preprocessed_data/correlations.csv
-TODO
-
-### preprocessed_data/data_pre_processing.ipynb
-TODO
-
-### preprocessed_data/mappings.json
-TODO
-
-### preprocessed_data/numeric_data.csv
-TODO
-
-### preprocessed_data/parenting.csv
-TODO
-
-### preprocessed_data/pre_processed_data.csv
-TODO
+### visualizations
 
 
 ## Third-Party Modules Used
